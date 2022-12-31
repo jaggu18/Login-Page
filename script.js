@@ -15,3 +15,15 @@ signupLink.onclick = (()=>{
   signupBtn.click();
   return false;
 });
+function auth(){
+   var username = document.getElementById("username").value;
+   var password = document.getElementById("password").value;
+   if(username=="admin" && password=="admin123")
+   {
+    alert("login successful!");
+   }
+   else{
+     alert("login failed!");
+     return url(index.html);
+   }
+}
